@@ -1,0 +1,12 @@
+{
+  "_comment": "麦当劳 MCP 脱敏配置示例。所有敏感值使用环境变量占位符，使用前请通过环境变量或 WorkBuddy 连接器授权提供真实凭据。请勿将真实凭据提交到代码仓库。",
+  "mcpServers": {
+    "mcd-mcp": {
+      "type": "url",
+      "url": "${MCD_MCP_SERVER_URL}",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      }
+    }
+  }
+}
